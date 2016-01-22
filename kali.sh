@@ -236,7 +236,7 @@ if [[ $? -ne 0 ]]; then
 fi
 
 
-##### (Optional) Check to see if Kali is in a VM. If so, install "Virtual Machine Addons/Tools" for a "better" virtual experiment
+##### (Optional) Check to see if Kali is in a VM. If so, install "Virtual Machine Addons/Tools" for a "better" virtual experience
 if [ -e "/etc/vmware-tools" ]; then
   echo -e "\n "${RED}'[!]'${RESET}" VMware Tools is ${RED}already installed${RESET}. Skipping..." 1>&2
 elif (dmidecode | grep -iq vmware); then
